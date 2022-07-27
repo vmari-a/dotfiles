@@ -1,0 +1,107 @@
+
+* {
+    fg:     #ececec;
+    bg:     #0d080d;
+    sel:    #FF00FF;
+    mut:    #5c485c;
+    imp:    #81a2be;
+    err:    #940b5d;
+    int:    #261a26;
+}
+
+window{
+    background-color:   var(bg);
+    width:              300px;
+
+    children:           [ "mainbox" ];
+}
+
+mainbox{
+    background-color:   inherit;
+
+    children:           [ "listview", "message", "mode-switcher", "inputbar" ];
+}
+
+// LIST OPTIONS
+
+listview{
+    lines:              10;
+    columns:            1;
+    background-color:   inherit;
+
+    children:           [ "element" ];
+}
+
+element {
+    cursor:             pointer;
+    border:             0;
+    margin:             0;
+    background-color:   inherit;
+    margin:             2px;
+    padding:            3px;
+
+    children:           [ "element-text" ];
+}
+
+element normal, element alternate{
+    text-color:         var(fg);
+}
+element selected{
+    background-color:   var(int);
+    text-color:         var(fg);
+}
+
+element-text, element-icon{
+    background-color:   transparent;
+    text-color:         inherit;
+    padding:            2px;
+}
+
+// MESSAGE
+
+message{
+    background-color:   inherit;
+
+    children:           [ "textbox" ];
+}
+
+textbox{
+    background-color:   inherit;
+    text-color:         var(mut);
+}
+
+// MODE SWITCHER
+
+mode-switcher{
+    background-color:   inherit;
+    margin:             2px;
+
+    children:           ["button"];
+}
+
+button{
+    background-color:   inherit;
+    padding:            2px 4px;
+    expand:             true;
+    font:               "Fira Mono 12";
+    text-color:         var(mut);
+}
+button selected{
+    text-color:         var(fg);
+}
+
+// INPUTBAR
+
+inputbar{
+    background-color:   var(int);
+    padding:            5px 7px;
+
+    children:           [ "entry" ];
+}
+
+entry{
+    background-color:   inherit;
+    text-color:         var(fg);
+    border:             0;
+    margin:             0;
+}

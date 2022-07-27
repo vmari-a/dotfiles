@@ -1,0 +1,41 @@
+URxvt.font: xft:Fira Mono:pixelsize=14
+URxvt.scrollBar: none
+URxvt.internalBorder: 14
+
+! special
+*.foreground:   #ffffff
+*.background:   #0d080d
+*.cursorColor:  #ffffff
+
+! black
+*.color0:       #261a26
+*.color8:       #5c485c
+
+! red
+*.color1:       #940b5d
+*.color9:       #c766a6
+
+! green
+*.color2:       #1e5a07
+*.color10:      #74bd68
+
+! yellow
+*.color3:       #974600
+*.color11:      #f0c674
+
+! blue
+*.color4:       #1c2452
+*.color12:      #81a2be
+
+! magenta
+*.color5:       #521f50
+*.color13:      #b294bb
+
+! cyan
+*.color6:       #17645a
+*.color14:      #77ada6
+
+! white
+*.color7:       #cdb7ce
+*.color15:      #ffe9ff
+

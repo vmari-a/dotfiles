@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd "$HOME"
+
+setxkbmap latam
+xrdb -merge .Xresources
+
+exec awesome
